@@ -2,7 +2,7 @@
 
 A small Electron app that shows your webcam in a floating circular overlay — always on top, draggable, resizable. Designed to sit on top of slides during a podcast or screen recording, the same way Loom or mmhmm do it.
 
-This app only renders video. Audio recording is handled by your screen recorder (ClipChamp, OBS, etc.).
+This app only renders video. Audio recording is handled by whatever screen recorder you use.
 
 ## Run
 
@@ -27,9 +27,9 @@ Hover over the circle to reveal the controls.
 
 The selected camera is remembered across launches.
 
-## Recording with ClipChamp
+## Recording
 
-Use ClipChamp's **screen recorder** (full-screen mode, not single-window capture) so it captures both your slides and this overlay together. ClipChamp records the mic separately, so your voice gets in fine.
+Use your screen recorder's **full-screen capture mode** (not single-window capture) so it picks up both your slides and this overlay together. The recorder handles mic audio on its own — this app stays out of the audio path.
 
 ## PowerPoint slideshow caveat
 

@@ -31,15 +31,11 @@ The selected camera is remembered across launches.
 
 Use your screen recorder's **full-screen capture mode** (not single-window capture) so it picks up both your slides and this overlay together. The recorder handles mic audio on its own — this app stays out of the audio path.
 
-## PowerPoint slideshow caveat
+## PowerPoint slideshow
 
-The overlay uses Electron's `screen-saver` always-on-top level, so it stays above normal windows including the PowerPoint window. However, **F5 fullscreen slideshow** in some Windows builds runs as exclusive fullscreen and can cover even top-level windows.
+The overlay uses Electron's `screen-saver` always-on-top level, so it stays above PowerPoint — including **F5 fullscreen slideshow on the same screen** (verified on Windows 11). It also works with Presenter View on a second monitor.
 
-If the overlay disappears in slideshow mode:
-- **Slide Show → Set Up Slide Show → Browsed by an individual (window)** — runs slideshow inside a window, overlay stays visible
-- Or use **Presenter View on a second monitor** — audience monitor goes fullscreen, your monitor stays windowed, overlay sits on either
-
-This is the same constraint Loom and mmhmm have.
+If a future Windows build ever blocks it, the workaround is **Slide Show → Set Up Slide Show → Browsed by an individual (window)**, which runs the slideshow inside a regular window where the overlay always sits on top.
 
 ## Tech
 

@@ -1,0 +1,12 @@
+{
+  "name": "recording-camera",
+  "version": "1.0.0",
+  "description": "Floating circular webcam overlay for podcast/screen recording",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^32.2.0"
+  }
+}
